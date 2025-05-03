@@ -17,7 +17,7 @@ public class Product {
     private int stock;
 
     public Product(int id, String code, String name, String category, double price, int stock) {
-        this.id = id;
+        this.id = id++;
         this.code = code;
         this.name = name;
         this.category = category;
@@ -26,15 +26,20 @@ public class Product {
     }
 
     public int getId() { return id; }
-    public void setId(int id){this.id = id;}
+    public void setId(int id) { this.id = id+1; }
+    
     public String getCode() { return code; }
-    public void setCode(String code){this.code = code;}
+    public void setCode(String code) { this.code = code; }
+    
     public String getName() { return name; }
-    public void setName(String name) {this.name = name;}
+    public void setName(String name) { this.name = name; }
+    
     public String getCategory() { return category; }
-    public void setCategory(String Category){this.category = category;}
+    public void setCategory(String Category) { this.category = category; }
     public double getPrice() { return price; }
-    public void setPrice(double price) {this.price = price;}
+    public void setPrice(double Price) { this.price = price; }
+    
     public int getStock() { return stock; }
     public void setStock(int stock) { this.stock = stock; }
+    
 }
